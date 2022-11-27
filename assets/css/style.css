@@ -1,0 +1,346 @@
+/* Reseteamos los estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*BODY DE TODA LA WEB*/
+
+body{
+        background-color:#ffff;
+        
+}
+
+/*NAVEGADOR DE TODA LA WEB*/
+
+    nav{
+        width: 100%;
+        background-color: #1B2030 ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav ul {
+        list-style: none;
+        display:flex;
+    }
+    nav ul li{
+        padding: 10px;
+        margin-right: 40PX;
+    }
+    .titulosnav{
+        text-decoration: none;
+        text-align: center;
+        font-weight:bold;
+        color: #FFFF;
+    }
+    .logo{
+        margin-left: 15PX;
+        margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 767px){
+        nav ul{
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .navbar-toggler{
+        background-color:  #ffff;
+        }
+
+
+    }    
+
+/*MAIN*/
+
+/*APLICANDO GRID A INICIO*/
+
+/* vista desktop */
+@media only screen and (min-width: 768px){
+
+.Inicio{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.presentacion1{
+    color: #49516F;
+    font-size: 30px;
+    margin-left: 60px;
+    margin-top: 60px;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+.GF{
+    color: #E7246E;
+    text-decoration: none;
+    text-emphasis: none;
+}
+
+.presentacion2{
+    display: flex;
+    padding-top: 60px;
+    color: #49516F;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.presentacion2bis{
+    display: flex;
+    padding-top: 5px;
+    color: #49516F;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.presentacion3{
+    color: #49516F;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+    padding: 0px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left:60px ;
+}
+
+.desc{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.desc li{
+    margin-left: 15px;
+}
+
+
+/* vista mobile */
+
+@media only screen and (max-width: 767px){
+    .Inicio{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        align-items: center;
+
+    }
+    .presentacion1{
+        color: #49516F;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 60px;
+        font-weight:bold;
+    }
+    .GF{
+        color: pink;
+        text-decoration: none;
+    }
+    
+    .presentacion2{
+        display: flex;
+        padding-top: 60px;
+        color: #49516F;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .presentacion2bis{
+        display: flex;
+        padding-top: 5px;
+        color: #49516F;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .presentacion3{
+        color: #49516F;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 20px;
+        column-gap: 30px;
+        padding: 0px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left:20px ;
+ 
+    }
+    .desc{
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .desc li{
+        margin-left: 15px;
+    }
+    
+    .videoinicio img{
+        width: 100%;
+    }
+}
+
+
+/*PÁGINA NOSOTROS*/
+
+.main_nosotros {
+    background-image: url("../img/imagen33.png");
+    background-size: 100%;
+    background-position: center;
+}
+.main_nosotros h4{
+    font-size: 35px;
+    color:pink;
+    text-align: center;
+    font-weight:bold;
+    padding-top: 40px;
+    padding-bottom:10px;
+}
+.nosotros{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(5);
+    row-gap: 30px;
+    padding: 40px;
+}
+.fila{
+    font-size: 20px;
+    color: pink;
+    font-style: oblique;
+    text-align: center;
+    font-weight:bold;
+}
+
+/*PÁGINA GALERIA*/
+
+.ContenedorCarrusel h5{
+   color: #FFFF;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+/* vista desktop */
+@media only screen and (min-width: 768px){
+.ContenedorCarrusel{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px
+}
+}
+
+/* vista mobile */
+@media only screen and (max-width: 767px){
+.ContenedorCarrusel{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px
+}
+}
+
+/*PÁGINA CONTACTO*/
+/*PÁGINA CONTACTO - REDES SOCIALES*/
+
+.Gridredes ul a{
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/*PÁGINA CONTACTO - FORMULARIO*/
+
+.contacto{    
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.contacto h3{
+    color: #E7246E;
+    font-weight:bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.form-group{
+    color: #49516F;
+    width:450;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-group select{
+    width: 40%;
+    font-size: 12px;
+    border-style:solid;
+    border-width:0.2px;
+
+}
+.form-group label {
+    font-weight:bold;
+    font-size: 18px;
+    padding-left: 0px;
+}
+
+.form-group input{
+    width: 40%;
+    font-size: 12px;
+    border-style:solid;
+    border-width:0.2px;
+}
+
+.form-group textarea{
+    width: 40%;
+    font-size: 12px;
+    border-style:solid;
+    border-width:0.2px;
+    margin-top: 5px;
+}
+
+.btn{
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+/*FOOTER DE TODA LA WEB*/
+
+footer{
+    color: #FFFF;
+    width: 100%;
+    height: 50px;
+    background-color: #1B2030;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer h5{
+    margin-left: 15px;
+    font-size: 12px;}
